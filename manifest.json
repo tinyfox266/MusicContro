@@ -1,0 +1,28 @@
+{
+    "name": "music control",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "music control",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "background": {
+        "scripts": ["js/global.js", "js/background.js"]
+    },
+    "permissions" : [
+        "tabs",
+    "storage"
+        ],
+    "commands": {
+        "jp-play": {
+            "description": "Play/Pause",
+            "global": true
+        }
+   },
+    "content_scripts": [
+    {
+        "matches": ["http://ssg.ustcsz.edu.cn/~zzp/music/"],
+        "js": ["js/jquery-1.11.1.min.js", "js/content.js"]
+    }
+    ]
+}
