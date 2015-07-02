@@ -1,6 +1,20 @@
 chrome.commands.onCommand.addListener(function(command) {
-    tabDo(function(tab){
-        var action = '.' + command;
-        chrome.tabs.sendMessage(tab, action);
-    });
+    if (command == 'play') {
+        tabDo(function(tab){
+            var site = localStorage["site"];
+            var action;
+            switch (site) {
+                case "163":
+                      action= '.ply';
+                      break;
+                case "qq":
+                      action = '#btnplay';
+                      break;
+                case "baidu":
+                      action = '.play';
+                      break;
+            }
+            chrome.tabs.sendMessage(tab, action);
+        });
+    }
 });

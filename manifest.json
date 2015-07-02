@@ -9,19 +9,21 @@
     "background": {
         "scripts": ["js/global.js", "js/background.js"]
     },
+    "options_page" : "options.html",
     "permissions" : [
         "tabs",
     "storage"
         ],
     "commands": {
-        "jp-play": {
+        "play": {
             "description": "Play/Pause",
             "global": true
         }
    },
     "content_scripts": [
     {
-        "matches": ["http://ssg.ustcsz.edu.cn/~zzp/music/"],
+        "matches": ["http://music.163.com/", "http://y.qq.com/*",
+        "http://play.baidu.com/"],
         "js": ["js/jquery-1.11.1.min.js", "js/content.js"]
     }
     ]
