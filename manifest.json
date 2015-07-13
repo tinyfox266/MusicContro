@@ -1,8 +1,8 @@
 {
-    "name": "music control",
+    "name": "Music Control",
     "version": "1.0",
     "manifest_version": 2,
-    "description": "music control",
+    "description": "Music Control",
     "browser_action": {
         "default_icon": "icon.png"
     },
@@ -18,11 +18,19 @@
         "play": {
             "description": "Play/Pause",
             "global": true
+        },
+        "next": {
+            "description": "Next",
+            "global": true
+        },
+        "prev": {
+            "description": "Previous",
+            "global": true
         }
    },
     "content_scripts": [
     {
-        "matches": ["http://music.163.com/", "http://y.qq.com/*",
+        "matches": ["http://music.163.com/*", "http://y.qq.com/*",
         "http://play.baidu.com/"],
         "js": ["js/jquery-1.11.1.min.js", "js/content.js"]
     }
