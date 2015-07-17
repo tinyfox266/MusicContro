@@ -1,15 +1,17 @@
-# music control ���ʹ�÷�����
+# Music Control 插件使用方法：
 
-* ���ز���ѹ
-* ��chrome��ַ��������chrome://extensions/
-* ������������ڿ�������չ����
-* ѡ������ѹ�õ��ļ���,ע���Ǹ�Ŀ¼
-* chrome://extensions/ҳ�淭����󣬵���ұߵġ����̿�ݼ���
-* �ҵ�music control�Ŀ�ݼ����ã�ͨ���ڵ�һ��
-* ��������Play�Ŀ�ݼ�ΪCtrl+�ո񣬵��ȷ����
-* ���κ�ҳ�水Ctrl+shit+�ո񣬶��Ქ��/��ͣ���֣������ǩҳ��û�����ֲ���ҳ�棬����ת�����ֲ���ҳ�棬
-  ����ֻ�Ქ�Ż�����ͣ���֣�ҳ�治�ᷢ����ת��
+* 下载并解压
+* 在chrome地址栏中输入chrome://extensions/
+* 点击【加载正在开发的扩展程序】
+* 选择插件解压好的文件夹,注意是根目录
+* chrome://extensions/页面翻到最后，点击右边的【键盘快捷键】
+* 找到music control的快捷键设置，通常在第一个
+* 比如设置Play的快捷键为Ctrl+空格，点击确定。
+* 在任何页面按Ctrl+shit+空格，都会播放/暂停音乐，如果标签页中没有音乐播放页面，会跳转到音乐播放页面，
+  否则，只会播放或者暂停音乐，页面不会发生跳转。
+* 设置播放上一首/上一首的设置类似
 
-# Note
-��ǰ�������ֲ���ҳ��Ϊhttp://ssg.ustcsz.edu.cn/~zzp/music/, ��Ҫ���Ʊ��ҳ����music.163.com�Ļ�����΢�ĸ���չ�Ϳ�������
+# Feature
+* 目前支持的网站有网易、qq、百度音乐
+* 支持的操作有播放/暂停，下一首，上一首
 
